@@ -30,7 +30,6 @@ get_header(); ?>
 
     <?php }
 
-
     if ( have_posts() ) : while( have_posts() ) : the_post(); ?>
 
         <article id="<?php the_ID(); ?>">
@@ -54,7 +53,6 @@ get_header(); ?>
         <p>Sorry, there is no content for you.</p>
 
     <?php endif;
-
 
 get_sidebar();
 
