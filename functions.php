@@ -1,9 +1,7 @@
 <?php
 
 /**
- *
  * Enqueue Styles and Scripts in theme
- *
  */
 function styles_and_scripts() {
 
@@ -17,9 +15,7 @@ add_action( 'wp_enqueue_scripts', 'styles_and_scripts' );
 
 
 /**
- *
  * Register the main sidebar
- *
  */
 function register_theme_sidebar() {
 
@@ -39,9 +35,7 @@ add_action( 'widgets_init', 'register_theme_sidebar' );
 
 
 /**
- *
  * Remove unnecessary tags in the <head> that adds Wordpress
- *
  */
 function remove_head_trash() {
 
@@ -54,9 +48,7 @@ add_action('init','remove_head_trash');
 
 
 /**
- *
  * Pagination Function
- *
  */
 function pagination() {
 
@@ -75,7 +67,6 @@ function pagination() {
 
 
 /**
- *
  * wp_title('|', true, 'right');
  *
  * @param $title
@@ -83,7 +74,6 @@ function pagination() {
  * @return string
  *
  * @link https://tommcfarlin.com/filter-wp-title/
- *
  */
 function mayer_wp_title( $title, $sep ) {
 
